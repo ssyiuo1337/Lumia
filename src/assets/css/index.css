@@ -1,0 +1,65 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .border-bottom-custom {
+    @apply border-b;
+    border-color: rgba(255, 255, 255, 0.1); /* #FFFFFF1A */
+  }
+
+  .border-bottom-custom-adventage {
+    border: 1.2px solid #d6b49b1a;
+  }
+
+  .border-bottom-custom2 {
+    border-width: 1.2px;
+    border-style: solid;
+    border-image-source: linear-gradient(180deg, #ffffff 0%, rgb(255, 0, 0) 100%);
+    border-image-slice: 1;
+  }
+
+  .custom-border-popup {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  
+  .custom-gradient-text-title {
+    background: linear-gradient(90deg, #F8D0D0 0%, #C29BC2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .custom-gradient-text-title-main {
+    background: linear-gradient(90deg, #F8D0D0 0%, #C29BC2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .faq-date-text {
+    background: linear-gradient(90deg, rgba(255, 41, 41, 0.5) 0%, rgba(246, 35, 35, 0.5) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+      display: none;
+  }
+
+  html {
+      scrollbar-width: none; /* Firefox */
+  }
+
+  body {
+      overflow-y: scroll;
+  }
+}
+
+body {
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: rgb(0, 0, 0);
+
+}
